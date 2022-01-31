@@ -1,0 +1,191 @@
+@import "_mixin.scss";
+.mains{
+// primera muestra de servicios inicio
+    #grilla{
+        @include tamaño (100%, 100);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(1, 300px);
+        gap: 50px;
+        margin: 70px auto;
+        .box{
+            @include tamaño (100%, 100%);
+            text-align: center;
+            overflow: hidden;
+            position: relative;
+            margin: 30px;
+            .imgs{
+                @include tamaño (100%, 100%);
+                object-fit: cover;
+                border-radius: 15px;
+                margin-top: 0;
+            }
+            h4{
+                font-family: "Dancing Script", cursive;
+                font-size: 25px;
+            }
+            p{
+                font-family: 'Playfair Display', serif;
+            }
+            li{
+                text-align: center;
+                list-style: none;
+                a{
+                    font-family: 'Playfair Display', serif;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+        .box .hover{
+            @include tamaño (0%, 100%);
+            background-color: rgba(255, 136, 191, 0.809);
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            transition: 1.5s all;
+            border-radius: 15px;
+            display: grid;
+            grid-template-columns: repeat(1, 3fr);
+            grid-gap: 10px;
+        }
+        .hover h4 .ps{
+            color: black;
+            text-shadow: 1px 1px 1px black;
+            font-size: 2em;
+            text-transform: uppercase;
+            
+        }
+        .box:hover .hover{
+            width: 100%;
+        }
+    }
+//primera muestra de servicios fin
+// Segunda muestra de servicios inicio 
+    .divs{
+        display: flex;
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: repeat(3, 310px);
+        gap: 15px;
+        .divs1{
+            background-color: white;
+            border:black 2px solid;
+            border-radius: 5%;
+            margin: auto;
+            width: 100%;
+            max-width: 900px;
+            padding: 10px;
+            border-radius: 10px;
+            img{
+                display: block;
+                margin: auto;
+                border-radius: 6%;
+            }
+            p{
+                margin: 5px;
+                font-family: 'Playfair Display', serif;
+            }
+            li{
+                text-align: center;
+                list-style: none;
+                a{
+                    font-family: 'Playfair Display', serif;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+//segunda muestra de servicios fin
+//formulario de turno inicio
+    form{
+        background-color: white;
+        border:black 2px solid;
+        border-radius: 5%;
+        margin: auto;
+        width: 100%;
+        max-width: 500px;
+        padding: 5px;
+        border-radius: 10px;
+        div{
+            font-family: 'Playfair Display', serif;
+            div{
+                select{
+                    font-family: 'Playfair Display', serif;
+                    margin-top: 5px;
+                    padding: 5px; 
+                }
+                select:hover{
+                    border-radius: 5px;
+                    border: black 1px solid;
+                }
+                select:focus{
+                    border-color: palevioletred;
+                    background-color: rgba(216, 112, 147, 0.637);
+                }
+                
+            }
+            div{
+                input{
+                    border: 1px solid black;
+                    border-radius: 6px;
+                    font-size: inherit;
+                    font-family: inherit;
+                    outline: none;
+                }
+                input:hover{
+                    border-radius: 5px;
+                    border: black 1px solid;
+                }
+                input:focus{
+                    border-color: palevioletred;
+                    background-color: rgba(216, 112, 147, 0.637);
+                }
+                
+            }
+            div{
+                input{
+                    border: 1px solid black;
+                    border-radius: 6px;
+                    font-size: inherit;
+                    font-family: inherit;
+                    outline: none;
+                }
+                input:hover{
+                    border-radius: 5px;
+                    border: black 1px solid;
+                }
+                input:focus{
+                    border-color: palevioletred;
+                    background-color: rgba(216, 112, 147, 0.637);
+                }
+            }
+            div{
+                input{
+                    width: auto;
+                    border: 1px solid black;
+                    border-radius: 6px;
+                    font-size: inherit;
+                    font-family: inherit;
+                    outline: none;
+                }
+                input:hover{
+                    border-radius: 5px;
+                    border: black 1px solid;
+                }
+                input:focus{
+                    border-color: palevioletred;
+                    background-color: rgba(216, 112, 147, 0.637);
+                }  
+            }
+        }
+    }
+//formulario de turno fin
+}

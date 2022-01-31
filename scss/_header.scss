@@ -1,0 +1,79 @@
+header{
+    margin: auto;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+// primer nav inicio
+    div{
+        ul{
+            display: flex;
+            justify-content: flex-end;
+            background-color: black;
+            padding: 1px;
+            margin-bottom: 15px;
+            list-style: none;
+            li{
+                float: left;
+                a{
+                    background-color: black;
+                    font-size:16px ;
+                    color: white;
+                    text-decoration: none;
+                    padding: 5px;
+                    display: block; 
+                    font-family: 'Playfair Display', serif;
+                }
+                a:hover{
+                    color: pink;
+                }
+                a:hover:after{
+                    width: 100%;
+                }
+                
+            }
+        }
+    }
+// primer nav fin 
+// titulo inicio
+    h1{
+        font-family: "Dancing Script", cursive;
+        font-size: 55px;
+        color: black;
+        text-align: center;
+        border: solid 5px black;
+        border-radius: 4px;
+        margin: auto;
+        padding: 5px;
+        background-color: white;
+    }
+// titulo fin 
+// segundo nav inicio 
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: black;
+            padding: 3px;
+            margin-top: 15px;
+            list-style: none;
+            li{
+                float: left;
+                a{
+                    background-color: black;
+                    font-size:30px ;
+                    color: white;
+                    text-decoration: none;
+                    padding: 10px 15px;
+                    display: block;
+
+                }
+                a:hover{
+                    color: rgb(250, 158, 173);
+                }
+                a:hover:after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+// segundo nav fin 
+}

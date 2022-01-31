@@ -1,0 +1,17 @@
+@mixin flex($just, $fontf, $fonts, $marg, $padd, $fontw){
+    display: flex;
+    justify-content: $just;
+    font-family: $fontf;
+    font-size: $fonts;
+    margin: $marg;
+    padding: $padd; 
+    font-weight: $fontw; 
+}
+@mixin tamaño($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin espacios($marg, $padd) {
+    margin: $marg;
+    padding: $padd;
+}

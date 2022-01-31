@@ -1,0 +1,52 @@
+main{
+    .nos-sect{
+        background-color: white;
+        font-family: 'Playfair Display', serif;
+        border:black 2px solid;
+        border-radius: 5%;
+        margin: auto;
+        width: 100%;
+        max-width: 900px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        p{
+            margin: 10px;
+        }
+    }
+    .nos-sect1{
+        background-color: white;
+        font-family: 'Playfair Display', serif;
+        border:black 2px solid;
+        border-radius: 5%;
+        margin: auto;
+        width: 100%;
+        max-width: 900px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        p{
+            margin: 10px;
+        }
+        div{
+            text-align: center;
+            width: 900%;
+            height: 450% ;
+        }
+    }
+    .form-cont{
+        font-family: 'Playfair Display', serif;
+        margin-top: 15px;
+        padding: 15px;
+        .form.complet{
+            div{
+                font-family: 'Playfair Display', serif;
+                margin-top: 10px;
+                padding: 5px;
+            }
+        }
+        .form-boton{
+            text-align: right;
+        }
+    }
+}

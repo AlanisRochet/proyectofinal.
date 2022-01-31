@@ -1,0 +1,1544 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("../img/marmol.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%; }
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Playfair Display", serif; }
+  header div ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 15px;
+    list-style: none; }
+    header div ul li {
+      float: left; }
+      header div ul li a {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-family: 'Playfair Display', serif; }
+      header div ul li a:hover {
+        color: pink; }
+      header div ul li a:hover:after {
+        width: 100%; }
+  header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: white; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 3px;
+    margin-top: 15px;
+    list-style: none; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        background-color: black;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; }
+      header nav ul li a:hover {
+        color: #fa9ead; }
+      header nav ul li a:hover:after {
+        width: 100%; }
+
+main section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin: 15px;
+  padding: 4px;
+  text-align: center; }
+
+main section article img {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+main h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px;
+  padding: 4px; }
+
+main form {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px; }
+  main form div {
+    font-family: 'Playfair Display', serif; }
+    main form div div {
+      font-family: 'Playfair Display', serif;
+      margin-top: 10px;
+      padding: 5px; }
+      main form div div input {
+        border: 1px solid black;
+        border-radius: 6px;
+        font-size: inherit;
+        font-family: inherit;
+        outline: none;
+        width: 100%; }
+      main form div div input:hover {
+        border-radius: 5px;
+        border: black 1px solid; }
+      main form div div input:focus {
+        border-color: palevioletred;
+        background-color: rgba(216, 112, 147, 0.637); }
+    main form div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    main form div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    main form div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black; }
+  footer div {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer div p {
+      font-family: "Playfair Display", serif;
+      color: white;
+      font-weight: normal;
+      margin-top: 50px; }
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 50px; }
+
+.mains #grilla {
+  width: 100%;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 300px);
+  gap: 50px;
+  margin: 70px auto; }
+  .mains #grilla .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 30px; }
+    .mains #grilla .box .imgs {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-top: 0; }
+    .mains #grilla .box h4 {
+      font-family: "Dancing Script", cursive;
+      font-size: 25px; }
+    .mains #grilla .box p {
+      font-family: 'Playfair Display', serif; }
+    .mains #grilla .box li {
+      text-align: center;
+      list-style: none; }
+      .mains #grilla .box li a {
+        font-family: 'Playfair Display', serif;
+        text-decoration: none; }
+  .mains #grilla .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 136, 191, 0.809);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1.5s all;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px; }
+  .mains #grilla .hover h4 .ps {
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+    text-transform: uppercase; }
+  .mains #grilla .box:hover .hover {
+    width: 100%; }
+
+.mains .divs {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(3, 310px);
+  gap: 15px; }
+  .mains .divs .divs1 {
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 5%;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    border-radius: 10px; }
+    .mains .divs .divs1 img {
+      display: block;
+      margin: auto;
+      border-radius: 6%; }
+    .mains .divs .divs1 p {
+      margin: 5px;
+      font-family: 'Playfair Display', serif; }
+    .mains .divs .divs1 li {
+      text-align: center;
+      list-style: none; }
+      .mains .divs .divs1 li a {
+        font-family: 'Playfair Display', serif;
+        text-decoration: none; }
+
+.mains form {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  border-radius: 10px; }
+  .mains form div {
+    font-family: 'Playfair Display', serif; }
+    .mains form div div select {
+      font-family: 'Playfair Display', serif;
+      margin-top: 5px;
+      padding: 5px; }
+    .mains form div div select:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div select:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      width: auto;
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+
+main .nos-sect {
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; }
+  main .nos-sect p {
+    margin: 10px; }
+
+main .nos-sect1 {
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; }
+  main .nos-sect1 p {
+    margin: 10px; }
+  main .nos-sect1 div {
+    text-align: center;
+    width: 900%;
+    height: 450%; }
+
+main .form-cont {
+  font-family: 'Playfair Display', serif;
+  margin-top: 15px;
+  padding: 15px; }
+  main .form-cont .form.complet div {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    padding: 5px; }
+  main .form-cont .form-boton {
+    text-align: right; }
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Playfair Display", serif; }
+  header div ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 15px;
+    list-style: none; }
+    header div ul li {
+      float: left; }
+      header div ul li a {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-family: 'Playfair Display', serif; }
+      header div ul li a:hover {
+        color: pink; }
+      header div ul li a:hover:after {
+        width: 100%; }
+  header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: white; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 3px;
+    margin-top: 15px;
+    list-style: none; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        background-color: black;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; }
+      header nav ul li a:hover {
+        color: #fa9ead; }
+      header nav ul li a:hover:after {
+        width: 100%; }
+
+.carru {
+  display: flex;
+  justify-content: center; }
+  .carru .gal-ustedes {
+    width: 550px; }
+  .carru .d-block {
+    height: 450px; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-image: url("../img/marmol.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: 100%;
+  height: 100%; }
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Playfair Display", serif; }
+  header div ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 15px;
+    list-style: none; }
+    header div ul li {
+      float: left; }
+      header div ul li a {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-family: 'Playfair Display', serif; }
+      header div ul li a:hover {
+        color: pink; }
+      header div ul li a:hover:after {
+        width: 100%; }
+  header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: white; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 3px;
+    margin-top: 15px;
+    list-style: none; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        background-color: black;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; }
+      header nav ul li a:hover {
+        color: #fa9ead; }
+      header nav ul li a:hover:after {
+        width: 100%; }
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Playfair Display", serif; }
+  header div ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 15px;
+    list-style: none; }
+    header div ul li {
+      float: left; }
+      header div ul li a {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-family: 'Playfair Display', serif; }
+      header div ul li a:hover {
+        color: pink; }
+      header div ul li a:hover:after {
+        width: 100%; }
+  header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: white; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 3px;
+    margin-top: 15px;
+    list-style: none; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        background-color: black;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; }
+      header nav ul li a:hover {
+        color: #fa9ead; }
+      header nav ul li a:hover:after {
+        width: 100%; }
+
+main section h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin: 15px;
+  padding: 4px;
+  text-align: center; }
+
+main section article img {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+main h6 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  text-align: center;
+  margin: 15px;
+  padding: 4px; }
+
+main form {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px; }
+  main form div {
+    font-family: 'Playfair Display', serif; }
+    main form div div {
+      font-family: 'Playfair Display', serif;
+      margin-top: 10px;
+      padding: 5px; }
+      main form div div input {
+        border: 1px solid black;
+        border-radius: 6px;
+        font-size: inherit;
+        font-family: inherit;
+        outline: none;
+        width: 100%; }
+      main form div div input:hover {
+        border-radius: 5px;
+        border: black 1px solid; }
+      main form div div input:focus {
+        border-color: palevioletred;
+        background-color: rgba(216, 112, 147, 0.637); }
+    main form div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    main form div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    main form div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black; }
+  footer div {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer div p {
+      font-family: "Playfair Display", serif;
+      color: white;
+      font-weight: normal;
+      margin-top: 50px; }
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 50px; }
+
+.mains #grilla {
+  width: 100%;
+  height: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: repeat(1, 300px);
+  gap: 50px;
+  margin: 70px auto; }
+  .mains #grilla .box {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 30px; }
+    .mains #grilla .box .imgs {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-top: 0; }
+    .mains #grilla .box h4 {
+      font-family: "Dancing Script", cursive;
+      font-size: 25px; }
+    .mains #grilla .box p {
+      font-family: 'Playfair Display', serif; }
+    .mains #grilla .box li {
+      text-align: center;
+      list-style: none; }
+      .mains #grilla .box li a {
+        font-family: 'Playfair Display', serif;
+        text-decoration: none; }
+  .mains #grilla .box .hover {
+    width: 0%;
+    height: 100%;
+    background-color: rgba(255, 136, 191, 0.809);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 1.5s all;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    grid-gap: 10px; }
+  .mains #grilla .hover h4 .ps {
+    color: black;
+    text-shadow: 1px 1px 1px black;
+    font-size: 2em;
+    text-transform: uppercase; }
+  .mains #grilla .box:hover .hover {
+    width: 100%; }
+
+.mains .divs {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(3, 310px);
+  gap: 15px; }
+  .mains .divs .divs1 {
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 5%;
+    margin: auto;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px;
+    border-radius: 10px; }
+    .mains .divs .divs1 img {
+      display: block;
+      margin: auto;
+      border-radius: 6%; }
+    .mains .divs .divs1 p {
+      margin: 5px;
+      font-family: 'Playfair Display', serif; }
+    .mains .divs .divs1 li {
+      text-align: center;
+      list-style: none; }
+      .mains .divs .divs1 li a {
+        font-family: 'Playfair Display', serif;
+        text-decoration: none; }
+
+.mains form {
+  background-color: white;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  padding: 5px;
+  border-radius: 10px; }
+  .mains form div {
+    font-family: 'Playfair Display', serif; }
+    .mains form div div select {
+      font-family: 'Playfair Display', serif;
+      margin-top: 5px;
+      padding: 5px; }
+    .mains form div div select:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div select:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+    .mains form div div input {
+      width: auto;
+      border: 1px solid black;
+      border-radius: 6px;
+      font-size: inherit;
+      font-family: inherit;
+      outline: none; }
+    .mains form div div input:hover {
+      border-radius: 5px;
+      border: black 1px solid; }
+    .mains form div div input:focus {
+      border-color: palevioletred;
+      background-color: rgba(216, 112, 147, 0.637); }
+
+main .nos-sect {
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; }
+  main .nos-sect p {
+    margin: 10px; }
+
+main .nos-sect1 {
+  background-color: white;
+  font-family: 'Playfair Display', serif;
+  border: black 2px solid;
+  border-radius: 5%;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center; }
+  main .nos-sect1 p {
+    margin: 10px; }
+  main .nos-sect1 div {
+    text-align: center;
+    width: 900%;
+    height: 450%; }
+
+main .form-cont {
+  font-family: 'Playfair Display', serif;
+  margin-top: 15px;
+  padding: 15px; }
+  main .form-cont .form.complet div {
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    padding: 5px; }
+  main .form-cont .form-boton {
+    text-align: right; }
+
+header {
+  margin: auto;
+  width: 100%;
+  font-family: "Playfair Display", serif; }
+  header div ul {
+    display: flex;
+    justify-content: flex-end;
+    background-color: black;
+    padding: 1px;
+    margin-bottom: 15px;
+    list-style: none; }
+    header div ul li {
+      float: left; }
+      header div ul li a {
+        background-color: black;
+        font-size: 16px;
+        color: white;
+        text-decoration: none;
+        padding: 5px;
+        display: block;
+        font-family: 'Playfair Display', serif; }
+      header div ul li a:hover {
+        color: pink; }
+      header div ul li a:hover:after {
+        width: 100%; }
+  header h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 55px;
+    color: black;
+    text-align: center;
+    border: solid 5px black;
+    border-radius: 4px;
+    margin: auto;
+    padding: 5px;
+    background-color: white; }
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 3px;
+    margin-top: 15px;
+    list-style: none; }
+    header nav ul li {
+      float: left; }
+      header nav ul li a {
+        background-color: black;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        display: block; }
+      header nav ul li a:hover {
+        color: #fa9ead; }
+      header nav ul li a:hover:after {
+        width: 100%; }
+
+.carru {
+  display: flex;
+  justify-content: center; }
+  .carru .gal-ustedes {
+    width: 550px; }
+  .carru .d-block {
+    height: 450px; }
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  background-color: black; }
+  footer div {
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer div p {
+      font-family: "Playfair Display", serif;
+      color: white;
+      font-weight: normal;
+      margin-top: 50px; }
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    color: white;
+    font-weight: normal;
+    margin-top: 50px; }
+
+@media screen and (max-width: 1000px) {
+  * {
+    padding: 0;
+    margin: 0; }
+  body {
+    background-image: url("../img/marmol.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%; }
+  header {
+    margin: auto;
+    width: 100%;
+    font-family: "Playfair Display", serif; }
+    header div ul {
+      display: flex;
+      justify-content: flex-end;
+      background-color: black;
+      padding: 1px;
+      margin-bottom: 15px;
+      list-style: none; }
+      header div ul li {
+        float: left; }
+        header div ul li a {
+          background-color: black;
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          padding: 5px;
+          display: block;
+          font-family: 'Playfair Display', serif; }
+        header div ul li a:hover {
+          color: pink; }
+        header div ul li a:hover:after {
+          width: 100%; }
+    header h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 55px;
+      color: black;
+      text-align: center;
+      border: solid 5px black;
+      border-radius: 4px;
+      margin: auto;
+      padding: 5px;
+      background-color: white; }
+    header nav {
+      align-content: center; }
+      header nav ul {
+        position: absolute;
+        align-content: center;
+        width: 100%;
+        display: block;
+        float: none;
+        padding: 3px;
+        margin-top: 15px;
+        list-style: none;
+        background-color: black; }
+        header nav ul li {
+          width: 100%; }
+          header nav ul li a {
+            background-color: black;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block; }
+          header nav ul li a:hover {
+            color: #fa9ead; }
+          header nav ul li a:hover:after {
+            width: 100%; }
+  main section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    text-align: center; }
+  main section article img {
+    width: 100%;
+    height: 220px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  main h6 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px;
+    padding: 20px; }
+  main form {
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 5%;
+    margin: auto;
+    width: 70%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px; }
+    main form div {
+      font-family: 'Playfair Display', serif; }
+      main form div div {
+        font-family: 'Playfair Display', serif;
+        margin-top: 10px;
+        padding: 5px; }
+        main form div div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none;
+          width: 100%; }
+        main form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        main form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+      main form div input {
+        border: 1px solid black;
+        border-radius: 6px;
+        font-size: inherit;
+        font-family: inherit;
+        outline: none; }
+      main form div input:hover {
+        border-radius: 5px;
+        border: black 1px solid; }
+      main form div input:focus {
+        border-color: palevioletred;
+        background-color: rgba(216, 112, 147, 0.637); }
+  .mains {
+    margin-top: 40%; }
+    .mains #grilla {
+      margin-top: 75px;
+      width: 100%;
+      height: 100;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: grid;
+      grid-template-columns: repeat(1, 50%);
+      grid-template-rows: repeat(3, 410px);
+      gap: 50px;
+      margin: 70px auto; }
+      .mains #grilla .box {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        margin: 30px; }
+        .mains #grilla .box .imgs {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+          margin-top: 0; }
+        .mains #grilla .box h4 {
+          font-family: "Dancing Script", cursive;
+          font-size: 25px; }
+        .mains #grilla .box p {
+          font-family: 'Playfair Display', serif; }
+        .mains #grilla .box li {
+          text-align: center;
+          list-style: none; }
+          .mains #grilla .box li a {
+            font-family: 'Playfair Display', serif;
+            text-decoration: none; }
+      .mains #grilla .box .hover {
+        width: 0%;
+        height: 100%;
+        background-color: rgba(255, 136, 191, 0.809);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 1.5s all;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 10px; }
+      .mains #grilla .hover h4 .ps {
+        color: black;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2em;
+        text-transform: uppercase; }
+      .mains #grilla .box:hover .hover {
+        width: 100%; }
+    .mains .divs {
+      display: flex;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(3, 410px);
+      gap: 15px; }
+      .mains .divs .divs1 {
+        background-color: white;
+        border: black 2px solid;
+        border-radius: 5%;
+        margin: auto;
+        width: 90%;
+        max-width: 900px;
+        padding: 10px;
+        border-radius: 10px; }
+        .mains .divs .divs1 img {
+          display: block;
+          margin: auto;
+          border-radius: 6%; }
+        .mains .divs .divs1 p {
+          margin: 5px;
+          font-family: 'Playfair Display', serif; }
+        .mains .divs .divs1 li {
+          text-align: center;
+          list-style: none; }
+          .mains .divs .divs1 li a {
+            font-family: 'Playfair Display', serif;
+            text-decoration: none; }
+    .mains form {
+      background-color: white;
+      border: black 2px solid;
+      border-radius: 5%;
+      margin: auto;
+      width: 100%;
+      max-width: 500px;
+      padding: 5px;
+      border-radius: 10px; }
+      .mains form div {
+        font-family: 'Playfair Display', serif; }
+        .mains form div div select {
+          font-family: 'Playfair Display', serif;
+          margin-top: 5px;
+          padding: 5px; }
+        .mains form div div select:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div select:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          width: auto;
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+  main {
+    margin-top: 35%; }
+    main .nos-sect {
+      background-color: white;
+      font-family: 'Playfair Display', serif;
+      border: black 2px solid;
+      border-radius: 5%;
+      margin: auto;
+      width: 90%;
+      max-width: 900px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center; }
+      main .nos-sect p {
+        margin: 10px; }
+      main .nos-sect .mapa {
+        text-align: center;
+        width: 300px;
+        height: 150px; }
+    main .form-cont {
+      font-family: 'Playfair Display', serif;
+      margin-top: 15px;
+      padding: 15px; }
+      main .form-cont .form.complet div {
+        font-family: 'Playfair Display', serif;
+        margin-top: 10px;
+        padding: 5px; }
+      main .form-cont .form-boton {
+        text-align: right; }
+  .carru {
+    margin-top: 45%;
+    display: flex;
+    justify-content: center; }
+    .carru .gal-ustedes {
+      width: 550px; }
+    .carru .d-block {
+      height: 350px; }
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: black; }
+    footer div {
+      display: flex;
+      align-content: flex-start;
+      flex-direction: column;
+      justify-content: space-around; }
+      footer div p {
+        font-family: "Playfair Display", serif;
+        color: white;
+        font-weight: normal;
+        margin-top: 50px; }
+    footer h3 {
+      display: flex;
+      justify-content: center;
+      font-family: "Playfair Display", serif;
+      color: white;
+      font-weight: normal;
+      margin-top: 50px; } }
+
+@media screen and (max-width: 1000px) and (max-width: 700px) {
+  * {
+    padding: 0;
+    margin: 0; }
+  body {
+    background-image: url("../img/marmol.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%; }
+  header {
+    margin: auto;
+    width: 100%;
+    font-family: "Playfair Display", serif; }
+    header div ul {
+      display: flex;
+      justify-content: flex-end;
+      background-color: black;
+      padding: 1px;
+      margin-bottom: 15px;
+      list-style: none; }
+      header div ul li {
+        float: left; }
+        header div ul li a {
+          background-color: black;
+          font-size: 16px;
+          color: white;
+          text-decoration: none;
+          padding: 5px;
+          display: block;
+          font-family: 'Playfair Display', serif; }
+        header div ul li a:hover {
+          color: pink; }
+        header div ul li a:hover:after {
+          width: 100%; }
+    header h1 {
+      font-family: "Dancing Script", cursive;
+      font-size: 55px;
+      color: black;
+      text-align: center;
+      border: solid 5px black;
+      border-radius: 4px;
+      margin: auto;
+      padding: 5px;
+      background-color: white; }
+    header nav {
+      align-content: center; }
+      header nav ul {
+        position: absolute;
+        align-content: center;
+        width: 98%;
+        display: block;
+        float: none;
+        padding: 3px;
+        margin-top: 15px;
+        list-style: none;
+        background-color: black; }
+        header nav ul li {
+          width: 100%; }
+          header nav ul li a {
+            background-color: black;
+            font-size: 30px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block; }
+          header nav ul li a:hover {
+            color: #fa9ead; }
+          header nav ul li a:hover:after {
+            width: 100%; }
+  main {
+    margin-top: 75%; }
+    main section h2 {
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      text-align: center; }
+    main section article img {
+      width: 100%;
+      height: 120px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    main h6 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      text-align: center;
+      margin: 15px;
+      padding: 20px; }
+    main form {
+      background-color: white;
+      border: black 2px solid;
+      border-radius: 5%;
+      margin: auto;
+      width: 70%;
+      max-width: 500px;
+      padding: 30px;
+      border-radius: 10px; }
+      main form div {
+        font-family: 'Playfair Display', serif; }
+        main form div div {
+          font-family: 'Playfair Display', serif;
+          margin-top: 10px;
+          padding: 5px; }
+          main form div div input {
+            border: 1px solid black;
+            border-radius: 6px;
+            font-size: inherit;
+            font-family: inherit;
+            outline: none;
+            width: 100%; }
+          main form div div input:hover {
+            border-radius: 5px;
+            border: black 1px solid; }
+          main form div div input:focus {
+            border-color: palevioletred;
+            background-color: rgba(216, 112, 147, 0.637); }
+        main form div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        main form div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        main form div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+  .mains {
+    margin-top: 75%; }
+    .mains #grilla {
+      width: 50%;
+      height: 50;
+      display: grid;
+      grid-template-columns: repeat(1, 250px);
+      grid-template-rows: repeat(1, 250px);
+      margin-left: 20%; }
+      .mains #grilla .box {
+        width: 100%;
+        height: 100%;
+        align-content: center;
+        overflow: hidden;
+        position: relative; }
+        .mains #grilla .box .imgs {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+          margin-top: 0; }
+        .mains #grilla .box h4 {
+          font-family: "Dancing Script", cursive;
+          font-size: 25px; }
+        .mains #grilla .box p {
+          font-family: 'Playfair Display', serif; }
+        .mains #grilla .box li {
+          text-align: center;
+          list-style: none; }
+          .mains #grilla .box li a {
+            font-family: 'Playfair Display', serif;
+            text-decoration: none; }
+      .mains #grilla .box .hover {
+        width: 0%;
+        height: 100%;
+        background-color: rgba(255, 136, 191, 0.809);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 1.5s all;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+        grid-gap: 10px; }
+      .mains #grilla .hover h4 .ps {
+        color: black;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2em;
+        text-transform: uppercase; }
+      .mains #grilla .box:hover .hover {
+        width: 100%; }
+    .mains .divs {
+      display: flex;
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(1, 100%);
+      grid-template-rows: repeat(3, 310px);
+      gap: 15px; }
+      .mains .divs .divs1 {
+        background-color: white;
+        border: black 2px solid;
+        border-radius: 5%;
+        margin: auto;
+        width: 90%;
+        max-width: 900px;
+        padding: 10px;
+        border-radius: 10px; }
+        .mains .divs .divs1 img {
+          width: 60%;
+          display: block;
+          margin: auto;
+          border-radius: 6%; }
+        .mains .divs .divs1 p {
+          margin: 5px;
+          font-family: 'Playfair Display', serif; }
+        .mains .divs .divs1 li {
+          text-align: center;
+          list-style: none; }
+          .mains .divs .divs1 li a {
+            font-family: 'Playfair Display', serif;
+            text-decoration: none; }
+    .mains form {
+      background-color: white;
+      border: black 2px solid;
+      border-radius: 5%;
+      margin: auto;
+      width: 90%;
+      max-width: 500px;
+      padding: 5px;
+      border-radius: 10px; }
+      .mains form div {
+        font-family: 'Playfair Display', serif; }
+        .mains form div div select {
+          font-family: 'Playfair Display', serif;
+          margin-top: 5px;
+          padding: 5px; }
+        .mains form div div select:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div select:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+        .mains form div div input {
+          width: auto;
+          border: 1px solid black;
+          border-radius: 6px;
+          font-size: inherit;
+          font-family: inherit;
+          outline: none; }
+        .mains form div div input:hover {
+          border-radius: 5px;
+          border: black 1px solid; }
+        .mains form div div input:focus {
+          border-color: palevioletred;
+          background-color: rgba(216, 112, 147, 0.637); }
+  main {
+    margin-top: 75%; }
+    main .nos-sect {
+      background-color: white;
+      font-family: 'Playfair Display', serif;
+      border: black 2px solid;
+      border-radius: 5%;
+      margin: auto;
+      width: 90%;
+      max-width: 900px;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center; }
+      main .nos-sect p {
+        margin: 10px; }
+      main .nos-sect .mapa {
+        text-align: center;
+        width: 300px;
+        height: 150px; }
+    main .form-cont {
+      font-family: 'Playfair Display', serif;
+      margin-top: 15px;
+      padding: 15px; }
+      main .form-cont .form.complet div {
+        font-family: 'Playfair Display', serif;
+        margin-top: 10px;
+        padding: 5px; }
+      main .form-cont .form-boton {
+        text-align: right; }
+  .carru {
+    margin-top: 85%;
+    display: flex;
+    justify-content: center; }
+    .carru .gal-ustedes {
+      width: 350px; }
+    .carru .d-block {
+      height: 250px; }
+    .carru footer {
+      text-align: center;
+      margin-top: 30px;
+      background-color: black; }
+      .carru footer div {
+        display: flex;
+        align-content: flex-start;
+        flex-direction: column;
+        justify-content: space-around; }
+        .carru footer div p {
+          font-family: "Playfair Display", serif;
+          color: white;
+          font-weight: normal;
+          margin-top: 50px; }
+      .carru footer h3 {
+        display: flex;
+        justify-content: center;
+        font-family: "Playfair Display", serif;
+        color: white;
+        font-weight: normal;
+        margin-top: 50px; } }

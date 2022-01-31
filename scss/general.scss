@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-image: url("../img/marmol.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 100%;
+}
+@import "_index.scss";
+@import "_servicios.scss";
+@import "_nosotros.scss";
+@import "_ustedes.scss";
+@import "_mediaq.scss";
